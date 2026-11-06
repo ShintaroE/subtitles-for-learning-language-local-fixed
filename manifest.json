@@ -1,0 +1,97 @@
+{
+  "action": {
+    "default_icon": "icons/logo16.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "js/service-worker/service-worker-min.js"
+  },
+  "content_scripts": [
+    {
+      "all_frames": false,
+      "css": [],
+      "js": [
+        "js/common/common-min.js",
+        "js/contents/compat.js",
+        "js/contents/contents-min.js"
+      ],
+      "matches": [
+        "https://www.amazon.ca/*",
+        "https://www.amazon.co.uk/*",
+        "https://www.amazon.co.jp/*",
+        "https://www.amazon.com/*",
+        "https://www.amazon.com.au/*",
+        "https://www.amazon.de/*",
+        "https://www.amazon.cn/*",
+        "https://www.amazon.sg/*",
+        "https://www.amazon.es/*",
+        "https://www.amazon.fr/*",
+        "https://www.amazon.nl/*",
+        "https://www.amazon.in/*",
+        "https://www.amazon.it/*",
+        "https://www.amazon.com.mx/*",
+        "https://www.amazon.ae/*",
+        "https://www.amazon.com.tr/*",
+        "https://www.amazon.com.br/*",
+        "https://www.amazon.se/*",
+        "https://www.primevideo.com/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "default_locale": "en",
+  "description": "__MSG_appDescription__",
+  "host_permissions": [
+    "https://*.subtitlesfll.com/*",
+    "https://*.opensubtitles.org/*",
+    "https://clients5.google.com/*"
+  ],
+  "icons": {
+    "16": "icons/logo16.png",
+    "48": "icons/logo48.png",
+    "128": "icons/logo128.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk30W8uBh706gtuQuahp9NBXeegUNRb9Y8Ec3QLJ3n0JImbWtuMIOXLcTThD6S45SZqvo4KzhL1ODCvZcgDpLNjAmYVRdNV+4XyyOmqG/KdketXB+mToSgpts4E9QD3/CMFK0CCT6A29pvspgJRJJvPYE7wXZwDdevqmOLRKKdt6vtWBnlsvH4Z/so9awyXofFUSTySQNsQILhmFCXrscWtprJsIAG90ZwsNEoHR+GnrkT2chh4ljKuDcNJ0XOMOikiPxZkp27jApnnEZUAbdjqlIEcjVbLfigRNysVQKeZfC2kouJEP5q90fLQFhmyrkRiRyq9DwKOOh48pAMdTZUQIDAQAB",
+  "manifest_version": 3,
+  "name": "Subtitles for LL（ローカル修正版）",
+  "optional_permissions": [],
+  "permissions": [
+    "storage",
+    "background",
+    "unlimitedStorage"
+  ],
+  "version": "2.1.1",
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://www.amazon.ca/*",
+        "https://www.amazon.co.uk/*",
+        "https://www.amazon.co.jp/*",
+        "https://www.amazon.com/*",
+        "https://www.amazon.com.au/*",
+        "https://www.amazon.de/*",
+        "https://www.amazon.cn/*",
+        "https://www.amazon.sg/*",
+        "https://www.amazon.es/*",
+        "https://www.amazon.fr/*",
+        "https://www.amazon.nl/*",
+        "https://www.amazon.in/*",
+        "https://www.amazon.it/*",
+        "https://www.amazon.com.mx/*",
+        "https://www.amazon.ae/*",
+        "https://www.amazon.com.tr/*",
+        "https://www.amazon.com.br/*",
+        "https://www.amazon.se/*",
+        "https://www.primevideo.com/*"
+      ],
+      "resources": [
+        "js/*",
+        "js/scripts/*",
+        "icons/*",
+        "*.html"
+      ]
+    }
+  ],
+  "version_name": "2.1.0 local patch",
+  "short_name": "SFLL ローカル修正版"
+}
